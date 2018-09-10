@@ -1,0 +1,11 @@
+Service description
+Service has been built as a new feature which allows users of the app to determine the reachable towns/cities from a
+starting point in a given amount of time.
+
+Service architecture
+Search service was developed as a distributed, loosely coupled microservice. It employs lightweight communication
+protocol such as HTTP.  Payload service  data is represented via JSON.
+
+Service environment
+As a microservice, search service can fire up as an independent application. It will operate in *nix environment.
+Actually, service has been developed to fire up in a cloud based systems.
