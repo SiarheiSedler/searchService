@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="Siarhei_Sedler" id="create-graph-table">
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">4</column>
+            <column name="TO_W">5</column>
+            <column name="DURATION">6</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">5</column>
+            <column name="TO_W">4</column>
+            <column name="DURATION">6</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">4</column>
+            <column name="TO_W">7</column>
+            <column name="DURATION">13</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">5</column>
+            <column name="TO_W">7</column>
+            <column name="DURATION">12</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">7</column>
+            <column name="TO_W">5</column>
+            <column name="DURATION">12</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">5</column>
+            <column name="TO_W">1</column>
+            <column name="DURATION">3</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">0</column>
+            <column name="TO_W">4</column>
+            <column name="DURATION">8</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">0</column>
+            <column name="TO_W">2</column>
+            <column name="DURATION">1</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">7</column>
+            <column name="TO_W">3</column>
+            <column name="DURATION">7</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">1</column>
+            <column name="TO_W">3</column>
+            <column name="DURATION">6</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">2</column>
+            <column name="TO_W">7</column>
+            <column name="DURATION">18</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">6</column>
+            <column name="TO_W">2</column>
+            <column name="DURATION">21</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">3</column>
+            <column name="TO_W">6</column>
+            <column name="DURATION">16</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">6</column>
+            <column name="TO_W">0</column>
+            <column name="DURATION">34</column>
+        </insert>
+
+        <insert schemaName="public" tableName="GRAPH">
+            <column name="FROM_V">6</column>
+            <column name="TO_W">4</column>
+            <column name="DURATION">72</column>
+        </insert>
+
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">0</column>
+            <column name="NAME">Minsk</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">1</column>
+            <column name="NAME">Gomel</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">2</column>
+            <column name="NAME">Mogilev</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">3</column>
+            <column name="NAME">Babruisk</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">4</column>
+            <column name="NAME">Brest</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">5</column>
+            <column name="NAME">Vitebsk</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">6</column>
+            <column name="NAME">Chernigov</column>
+        </insert>
+
+        <insert schemaName="public" tableName="CITY">
+            <column name="CODE">7</column>
+            <column name="NAME">Chechersk</column>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

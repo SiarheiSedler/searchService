@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="Siarhei_Sedler" id="create-city-table">
+
+        <createTable schemaName="public" tableName="CITY">
+
+            <column autoIncrement="true" name="id" type="BIGINT"/>
+            <column name="CODE" type="BIGINT"/>
+            <column name="NAME" type="varchar(1024)"/>
+
+        </createTable>
+
+        <addPrimaryKey columnNames="id"
+                       constraintName="pk_city"
+                       schemaName="public"
+                       tableName="CITY"/>
+
+    </changeSet>
+</databaseChangeLog>

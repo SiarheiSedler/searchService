@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="Siarhei_Sedler" id="create-graph-table">
+
+        <createTable schemaName="public" tableName="GRAPH">
+
+            <column autoIncrement="true" name="id" type="BIGINT"/>
+            <column name="FROM_V" type="INTEGER"/>
+            <column name="TO_W" type="INTEGER"/>
+            <column name="DURATION" type="INTEGER"/>
+
+        </createTable>
+
+        <addPrimaryKey columnNames="id"
+                       constraintName="pk_graph"
+                       schemaName="public"
+                       tableName="GRAPH"/>
+
+    </changeSet>
+</databaseChangeLog>
